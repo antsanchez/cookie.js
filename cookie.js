@@ -64,15 +64,11 @@ function checkCookie(cname)
  * Get URL Parameter
  * 
  * @param {string} name - Name of the parameter
- * @param {string} url - URL
  * @returns {string | null} Value of the parameter if exists
  */
-function getParameterByName(name, url) 
+function getParameterByName(name) 
 {
-    if (!url) {
-      url = window.location.href;
-    }
-
+    url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
     
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"), results = regex.exec(url);
