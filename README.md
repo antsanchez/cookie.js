@@ -9,7 +9,7 @@ Call the function writeCookieOnPlace(<i>name_of_the_cookie_or_parameter</i>, <i>
   <li>The value of the cookie is saved to the input with the selected id</li>
 </ol>
 
-##Example
+## Example
 
 <code>writeCookieOnPlace('affiliate', 'affiliateName')</code>
 
